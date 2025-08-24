@@ -1,0 +1,91 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Macondo', static;
+}
+
+:root {
+    --background: #AD28EB;
+    --wrong: #ee0000;
+    --correct: #15E602;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+
+/* Variable styles for correct and  wrong answers */
+body.correct {
+    background-color: var(--correct);
+}
+
+body.wrong {
+    background-color: var(--wrong);
+}
+
+.container{
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+
+/* Button styles */
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn {
+    --hue: var(--background);
+    border: 1px solid hsl(287, 100%, 30%);
+    background-color: hsl(287, 64%, 45%, 0.501);
+    border-radius: 5px 10px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+}
+
+.btn:hover {
+    border-color: black;
+}
+
+.btn.correct{
+    background-color: var(--correct);
+     color: black;
+}
+
+.btn.wrong{
+    background-color: var(--wrong);
+    border-color: black;
+}
+
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
