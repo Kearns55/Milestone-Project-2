@@ -18,7 +18,14 @@ body {
     align-items: center;
     height: 100vh;
     width: 100vw;
-    
+    background-image: url('../images/background-img.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+h1, h2 {
+    color: black;
+    text-align: center;
 }
 
 
@@ -32,12 +39,14 @@ body.wrong {
 }
 
 .container{
-    width: 800px;
-    max-width: 80%;
+    width: 700px;
+    max-width: 100%;
     background-color: white;
-    border-radius: 5px;
-    padding: 10px;
+    border-radius: 15px;
+    padding: 20px;
     box-shadow: 0 0 10px 2px;
+    text-align: center;
+    justify-content: center;
 }
 
 
