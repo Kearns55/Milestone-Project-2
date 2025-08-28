@@ -4,37 +4,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap links-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link href="assets/css/style.css" rel="stylesheet">
   <script defer src="script.js"></script>
   <title>Quiz as Gaeilge</title>
 
-  <!-- google font links-->
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
-  </style>
+</head>
+
+<!-- google font links-->
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+</style>
 
 </head>
 
 <body>
-    <div class="container">
-       <div class="heading">
-          <h1>Quiz as Gaeilge</h1>
-          <h2>Test your knowledge of the Irish language!</h2>
-        </div>
-      <div id="question-container" class="hide">
-        <div id="question">Question</div>
-        <div id="answer-buttons" class="btn-grid">
-          <button class="btn">Answer 1</button>
-          <button class="btn">Answer 2</button>
-          <button class="btn">Answer 3</button>
-          <button class="btn">Answer 4</button>
-        </div>
-      </div>
-      <div class="controls">
-        <button id="start-btn" class="start-btn btn">Start</button>
-        <button id="next-btn" class="next-btn btn hide">Next</button>
+
+  <!-- welcome page -->
+  <div class="container">
+    <div class="heading">
+      <h1>Quiz as Gaeilge</h1>
+      <h2>Test your knowledge of the Irish language!</h2>
+      <h3> Select a category to begin:</h3>
+    </div>
+
+    <!-- question container -->
+    <div id="question-container" class="hide">
+      <div id="question">Question</div>
+      <div id="answer-buttons" class="btn-grid">
+        <button class="btn">Answer 1</button>
+        <button class="btn">Answer 2</button>
+        <button class="btn">Answer 3</button>
+        <button class="btn">Answer 4</button>
       </div>
     </div>
+
+    <!-- button controls -->
+    <div class="controls">
+      <div id="category-select" class="category-select">
+        <button type="button" class="btn btn-primary category-btn" id="animal-btn"
+          data-category="animals">Animals</button>
+        <button type="button" class="btn btn-primary category-btn" id="fruit-btn"
+        data-category="fruits">Fruits</button>
+        <button type="button" class="btn btn-primary category-btn" id="colour-btn"
+        data-category="colours">Colours</button>
+      </div>
+      <button id="next-btn" class="btn btn-primary hide">Next</button>
+    </div>
+  </div>
 </body>
 
 </html>

@@ -29,14 +29,6 @@ h1, h2 {
 }
 
 
-/* Variable styles for correct and  wrong answers */
-body.correct {
-    background-color: var(--correct);
-}
-
-body.wrong {
-    background-color: var(--wrong);
-}
 
 .container{
     width: 700px;
@@ -59,12 +51,12 @@ body.wrong {
     margin: 20px 0;
 }
 
-.btn {
+.btn, #animal-btn, #fruit-btn, #colour-btn {
     --hue: var(--background);
     border: 1px solid hsl(287, 100%, 30%);
     background-color: hsl(287, 64%, 45%, 0.501);
     border-radius: 5px 10px;
-    padding: 5px 10px;
+    padding: 10px 20px;
     color: white;
     outline: none;
 }
@@ -83,7 +75,7 @@ body.wrong {
     border-color: black;
 }
 
-.start-btn, .next-btn {
+.next-btn {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
