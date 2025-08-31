@@ -1,5 +1,6 @@
 const heading = document.querySelector('.heading');
 const nextButton = document.getElementById('next-btn');
+const restartButton = document.getElementById('restart-btn');
 const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
@@ -27,13 +28,19 @@ categoryButtons.forEach(button => {
 });
 
 
+restartButton.addEventListener('click', () => {
+  window.location.reload();
+});
+
 nextButton.addEventListener('click', () => {
   currentQuestionIndex++;
   setNextQuestion();
 });
 
+
 function startGame() {
   document.getElementById('category-select').classList.add('hide');
+  document.getElementById('restart-btn').classList.remove('hide');
   heading.classList.add('hide');
   shuffledQuestions = [...questions].sort(() => Math.random() - 0.5);
   currentQuestionIndex = 0;
@@ -78,8 +85,8 @@ function selectAnswer(e) {
   Array.from(answerButtonsElement.children).forEach(button => {
     setStatusClass(button, button.dataset.correct);
   });
-  if (shuffledQuestions.length > currentQuestionIndex + 1) {
-    nextButton.classList.remove('hide');
+ if (currentQuestionIndex < 9)
+  { nextButton.classList.remove('hide');  
   }
 }
 

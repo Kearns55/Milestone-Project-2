@@ -88,14 +88,13 @@ h1, h2 {
 #next-btn {
     font-size: 1rem;
     font-weight: bold;
-    padding-right: 10px;
+
 }
 
 #restart-btn {
     font-size: 1rem;
     font-weight: bold;
-    padding-left: 10px;
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .controls {
