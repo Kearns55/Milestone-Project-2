@@ -97,6 +97,11 @@ h1, h2 {
     margin-right: 10px;
 }
 
+#score{
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
 .controls {
     display: flex;
     justify-content: center;
