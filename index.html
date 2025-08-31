@@ -24,32 +24,35 @@
 
     <!-- question container -->
     <div id="question-container" class="hide">
-      <div id="question">Question</div>
-      <div id="answer-buttons" class="btn-grid">
-        <button class="btn">Answer 1</button>
-        <button class="btn">Answer 2</button>
-        <button class="btn">Answer 3</button>
-        <button class="btn">Answer 4</button>
+      <div id="question"></div>
+        <div id="answer-buttons" class="btn-grid">
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 2</button>
+          <button class="btn">Answer 3</button>
+          <button class="btn">Answer 4</button>
       </div>
     </div>
+
 
     <!-- button controls -->
     <div class="controls">
       <div id="category-select" class="category-select">
         <button type="button" class="btn btn-primary category-btn" id="animal-btn"
           data-category="animals">Animals</button>
-        <button type="button" class="btn btn-primary category-btn" id="fruit-btn"
-        data-category="fruits">Fruits</button>
+        <button type="button" class="btn btn-primary category-btn" id="fruit-btn" data-category="fruits">Fruits</button>
         <button type="button" class="btn btn-primary category-btn" id="colour-btn"
-        data-category="colours">Colours</button>
+          data-category="colours">Colours</button>
       </div>
       <button id="next-btn" class="btn btn-primary hide">Next</button>
+      <button id="restart-btn" class="btn btn-primary hide">Restart</button>
     </div>
   </div>
-  <!-- bootstrap script--> 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
-    <script src="assets/js/script.js"></script>
+  <!-- bootstrap script-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+  </script>
+  <script src="assets/js/questions.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>

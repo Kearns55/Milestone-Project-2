@@ -78,10 +78,24 @@ h1, h2 {
     border-color: black;
 }
 
-.next-btn {
-    font-size: 1.5rem;
+
+.current-question{
     font-weight: bold;
-    padding: 10px 20px;
+    font-size: larger;
+    color:#4e1cd6; 
+}
+
+#next-btn {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+#restart-btn {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 10px;
+    margin-left: 10px;
 }
 
 .controls {
