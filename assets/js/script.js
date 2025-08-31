@@ -60,7 +60,7 @@ function showQuestion(question) {
     const button = document.createElement('button');
     button.innerText = answer.text;
     button.classList.add('btn');
-    if (answer.correct){
+    if (answer.correct) {
       button.dataset.correct = answer.correct;
     }
     button.addEventListener('click', selectAnswer);
@@ -83,15 +83,16 @@ function selectAnswer(e) {
   const correct = selectedButton.dataset.correct;
   if (correct) {
     score++;
-    scoreElement.innerText = `Score: ${score}`;
   }
   setStatusClass(document.body, correct);
   Array.from(answerButtonsElement.children).forEach(button => {
     setStatusClass(button, button.dataset.correct);
   });
- if (currentQuestionIndex < 9)
-  { nextButton.classList.remove('hide');  
+  if (currentQuestionIndex < 9) {
+    nextButton.classList.remove('hide');
   }
+  scoreElement.innerText = `Score: ${score}`;
+  Array.from(answerButtonsElement.children).forEach(button => button.disabled = true);
 }
 
 
@@ -108,4 +109,9 @@ function setStatusClass(element, correct) {
 function clearStatusClass(element) {
   element.classList.remove('correct');
   element.classList.remove('wrong');
+}
+
+function endQuiz() {
+  document.getElementById('end-quiz').classList.remove('hide');
+  document.getElementById('final-score').innerText = score;
 }

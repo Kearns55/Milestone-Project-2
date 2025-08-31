@@ -119,7 +119,7 @@ const animalQuestions = [{
         correct: false
     }
     ])
-}, 
+},
 {
     question: 'goat',
     answers: shuffle([{
@@ -139,7 +139,7 @@ const animalQuestions = [{
         correct: false
     }
     ])
-}, 
+},
 {
     question: 'chicken',
     answers: shuffle([{
@@ -160,7 +160,7 @@ const animalQuestions = [{
     }
     ])
 },
- {
+{
     question: 'duck',
     answers: shuffle([{
         text: "Lacha",
@@ -179,7 +179,7 @@ const animalQuestions = [{
         correct: false
     }
     ])
-}, 
+},
 {
     question: 'rabbit',
     answers: shuffle([{
@@ -199,7 +199,7 @@ const animalQuestions = [{
         correct: false
     }
     ])
-}, 
+},
 {
     question: 'fox',
     answers: shuffle([{
@@ -219,7 +219,7 @@ const animalQuestions = [{
         correct: false
     }
     ])
-}, 
+},
 {
     question: 'bear',
     answers: shuffle([{
@@ -240,7 +240,7 @@ const animalQuestions = [{
     }
     ])
 },
- {
+{
     question: 'deer',
     answers: shuffle([{
         text: "Fia",
@@ -259,7 +259,7 @@ const animalQuestions = [{
         correct: false
     }
     ])
-}, 
+},
 {
     question: 'wolf',
     answers: shuffle([{
@@ -280,7 +280,7 @@ const animalQuestions = [{
     }
     ])
 },
- {
+{
     question: 'mouse',
     answers: shuffle([{
         text: "Luch",
@@ -299,7 +299,7 @@ const animalQuestions = [{
         correct: false
     }
     ])
-}, 
+},
 {
     question: 'rat',
     answers: shuffle([{
@@ -319,7 +319,7 @@ const animalQuestions = [{
         correct: false
     }
     ])
-}, 
+},
 {
     question: 'snake',
     answers: shuffle([{
@@ -339,7 +339,7 @@ const animalQuestions = [{
         correct: false
     }
     ])
-}, 
+},
 {
     question: 'fish',
     answers: shuffle([{
@@ -359,7 +359,7 @@ const animalQuestions = [{
         correct: false
     }
     ])
-}, 
+},
 {
     question: 'bird',
     answers: shuffle([{
@@ -379,7 +379,7 @@ const animalQuestions = [{
         correct: false
     }
     ])
-}, 
+},
 {
     question: 'frog',
     answers: shuffle([{
@@ -422,84 +422,70 @@ const fruitQuestions = [{
     }
     ])
 },
-{
+ {
     question: 'banana',
     answers: shuffle([{
         text: "Banana",
         correct: true
-    },
-    {
+    }, {
         text: "Úll",
         correct: false
-    },
-    {
+    }, {
         text: "Pineapple",
         correct: false
-    },
-    {
+    }, {
         text: "Síol",
         correct: false
-    }
-    ])
-}, {
+    }])
+},
+ {
     question: 'grape',
     answers: shuffle([{
         text: "Cruite",
         correct: true
-    },
-    {
+    }, {
         text: "Úll",
         correct: false
-    },
-    {
+    }, {
         text: "Banana",
         correct: false
-    },
-    {
+    }, {
         text: "Síol",
         correct: false
-    }
-    ])
-}, {
+    }])
+}, 
+{
     question: 'orange',
     answers: shuffle([{
         text: "Oráiste",
         correct: true
-    },
-    {
+    }, {
         text: "Úll",
         correct: false
-    },
-    {
+    }, {
         text: "Banana",
         correct: false
-    },
-    {
+    }, {
         text: "Síol",
         correct: false
-    }
-    ])
-}, {
+    }])
+}, 
+{
     question: 'pineapple',
     answers: shuffle([{
         text: "Ananás",
         correct: true
-    },
-    {
+    }, {
         text: "Úll",
         correct: false
-    },
-    {
+    }, {
         text: "Banana",
         correct: false
-    },
-    {
+    }, {
         text: "Síol",
         correct: false
-    }
-    ])
-}
-]
+    }])
+}]
 
 const colourQuestions = [{
     question: 'red',
