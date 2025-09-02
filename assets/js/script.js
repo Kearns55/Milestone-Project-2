@@ -42,7 +42,8 @@ function startGame() {
   document.getElementById('restart-btn').classList.remove('hide');
   document.getElementById('score').classList.remove('hide');
   heading.classList.add('hide');
-  shuffledQuestions = [...questions].sort(() => Math.random() - 0.5);
+//Question/answer shuffle
+  shuffledQuestions = shuffleArray([...questions]);
   currentQuestionIndex = 0;
   questionContainerElement.classList.remove('hide');
   setNextQuestion();
@@ -55,8 +56,9 @@ function setNextQuestion() {
 
 
 function showQuestion(question) {
-  questionElement.innerHTML = `What is <span class="current-question">${question.question}</span> as Gaeilge?`;
-  question.answers.forEach(answer => {
+  questionElement.innerText = question.question;
+  let shuffledAnswers = shuffleArray(question.answers);
+  shuffledAnswers.forEach(answer => {
     const button = document.createElement('button');
     button.innerText = answer.text;
     button.classList.add('btn');
@@ -114,4 +116,9 @@ function clearStatusClass(element) {
 function endQuiz() {
   document.getElementById('end-quiz').classList.remove('hide');
   document.getElementById('final-score').innerText = score;
+}
+
+// Shuffle questions and answers
+function shuffleArray(arrayToBeShuffled) {
+  return arrayToBeShuffled.sort(() => Math.random() - 0.5);
 }
