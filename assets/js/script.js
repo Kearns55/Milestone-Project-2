@@ -6,6 +6,7 @@ const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 const categoryButtons = document.querySelectorAll('.category-btn');
 const scoreElement = document.getElementById('score');
+const endQuizElement =document.getElementById('end-quiz');
 let questions, shuffledQuestions, currentQuestionIndex;
 let score = 0;
 
@@ -95,7 +96,20 @@ function selectAnswer(e) {
   }
   scoreElement.innerText = `Score: ${score}`;
   Array.from(answerButtonsElement.children).forEach(button => button.disabled = true);
+} else {
+    endQuiz();
+  }
 }
+
+function endQuiz() {
+  questionContainerElement.classList.add('hide');
+  endQuizElement.classList.remove('hide');
+  restartButton.classList.remove('hide');
+  nextButton.classList.add('hide');
+  scoreElement.classList.add('hide');
+  document.getElementById('final-score').innerText = score;
+}
+
 
 
 function setStatusClass(element, correct) {
