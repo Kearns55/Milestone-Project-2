@@ -1,6 +1,10 @@
+/* jshint esversion: 11 */
+
 const heading = document.querySelector('.heading');
 const nextButton = document.getElementById('next-btn');
 const restartButton = document.getElementById('restart-btn');
+const newGameButton = document.getElementById('new-btn');
+const controls = document.getElementById('controls');
 const questionContainerElement = document.getElementById('question-container');
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
@@ -9,6 +13,7 @@ const scoreElement = document.getElementById('score');
 const endQuizElement =document.getElementById('end-quiz');
 let questions, shuffledQuestions, currentQuestionIndex;
 let score = 0;
+let maxQuestions = 3;
 
 categoryButtons.forEach(button => {
   button.addEventListener('click', (event) => {
@@ -28,6 +33,10 @@ categoryButtons.forEach(button => {
 
 
 restartButton.addEventListener('click', () => {
+  window.location.reload();
+});
+
+newGameButton.addEventListener('click', () => {
   window.location.reload();
 });
 
@@ -57,7 +66,7 @@ function setNextQuestion() {
 
 
 function showQuestion(question) {
-  questionElement.innerText = question.question;
+  questionElement.innerHTML = `What is <span class="current-question">${question.question}</span> as Gaeilge?`;
   let shuffledAnswers = shuffleArray(question.answers);
   shuffledAnswers.forEach(answer => {
     const button = document.createElement('button');
@@ -82,21 +91,20 @@ function resetState() {
 }
 
 function selectAnswer(e) {
+  Array.from(answerButtonsElement.children).forEach(button => button.disabled = true);
   const selectedButton = e.target;
   const correct = selectedButton.dataset.correct;
-  if (correct) {
+    if (correct) {
     score++;
+    scoreElement.innerText = `Score: ${score}`;
   }
   setStatusClass(document.body, correct);
   Array.from(answerButtonsElement.children).forEach(button => {
     setStatusClass(button, button.dataset.correct);
   });
-  if (currentQuestionIndex < 9) {
+  if (maxQuestions > currentQuestionIndex + 1) {
     nextButton.classList.remove('hide');
-  }
-  scoreElement.innerText = `Score: ${score}`;
-  Array.from(answerButtonsElement.children).forEach(button => button.disabled = true);
-} else {
+  } else {
     endQuiz();
   }
 }
@@ -104,8 +112,7 @@ function selectAnswer(e) {
 function endQuiz() {
   questionContainerElement.classList.add('hide');
   endQuizElement.classList.remove('hide');
-  restartButton.classList.remove('hide');
-  nextButton.classList.add('hide');
+  controls.classList.add('hide');
   scoreElement.classList.add('hide');
   document.getElementById('final-score').innerText = score;
 }
@@ -127,10 +134,6 @@ function clearStatusClass(element) {
   element.classList.remove('wrong');
 }
 
-function endQuiz() {
-  document.getElementById('end-quiz').classList.remove('hide');
-  document.getElementById('final-score').innerText = score;
-}
 
 // Shuffle questions and answers
 function shuffleArray(arrayToBeShuffled) {

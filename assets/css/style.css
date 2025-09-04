@@ -57,7 +57,7 @@ h1, h2 {
 .btn, #animal-btn, #fruit-btn, #colour-btn {
     --hue: var(--background);
     border: 1px solid hsl(287, 100%, 30%);
-    background-color: hsl(287, 64%, 45%, 0.501);
+    background-color: rebeccapurple;
     border-radius: 5px 10px;
     padding: 10px 20px;
     color: white;
@@ -88,13 +88,14 @@ h1, h2 {
 #next-btn {
     font-size: 1rem;
     font-weight: bold;
+    padding: 10px 25px;
 
 }
 
-#restart-btn {
+#restart-btn { 
     font-size: 1rem;
     font-weight: bold;
-    margin-right: 10px;
+    padding: 10px 20px;
 }
 
 #score{
@@ -106,6 +107,8 @@ h1, h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+    margin-top: auto;
 }
 
 .hide {
