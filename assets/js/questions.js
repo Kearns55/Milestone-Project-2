@@ -1,468 +1,647 @@
 /* jshint esversion: 11 */
 
+// Question sets for each category //
+
+// Animal questions //
 const animalQuestions = [
     {
         question: "dog",
         answers: [
-            {text: "Madra", correct: true},
-            {text: "Cat", correct: false},
-            {text: "Capall", correct: false},
-            {text: "Póca", correct: false}
-        ]
-    },
-    {
-        question: "cat",
-        answers: [
-            {text: "Cat", correct: true},
-            {text: "Madra", correct: false},
-            {text: "Luch", correct: false},
-            {text: "Loscán", correct: false}
+            { text: "Madra", correct: true },
+            { text: "Cat", correct: false },
+            { text: "Capall", correct: false },
+            { text: "Póca", correct: false }
         ]
     },
     {
         question: "horse",
         answers: [
-            {text: "Capall", correct: true},
-            {text: "Bó", correct: false},
-            {text: "Leon", correct: false},
-            {text: "Eilifint", correct: false}
+            { text: "Capall", correct: true },
+            { text: "Bó", correct: false },
+            { text: "Leon", correct: false },
+            { text: "Eilifint", correct: false }
         ]
     },
     {
         question: "cow",
         answers: [
-            {text: "Bó", correct: true},
-            {text: "Muc", correct: false},
-            {text: "Capall", correct: false},
-            {text: "Madra", correct: false}
+            { text: "Bó", correct: true },
+            { text: "Muc", correct: false },
+            { text: "Capall", correct: false },
+            { text: "Madra", correct: false }
         ]
     },
     {
         question: "sheep",
         answers: [
-            {text: "Caora", correct: true},
-            {text: "Coinín", correct: false},
-            {text: "Gabhar", correct: false},
-            {text: "Loscán", correct: false}
+            { text: "Caora", correct: true },
+            { text: "Coinín", correct: false },
+            { text: "Gabhar", correct: false },
+            { text: "Loscán", correct: false }
         ]
     },
     {
         question: "pig",
         answers: [
-            {text: "Muc", correct: true},
-            {text: "Bó", correct: false},
-            {text: "Luch", correct: false},
-            {text: "Francach", correct: false}
+            { text: "Muc", correct: true },
+            { text: "Bó", correct: false },
+            { text: "Luch", correct: false },
+            { text: "Francach", correct: false }
         ]
     },
     {
         question: "goat",
         answers: [
-            {text: "Gabhar", correct: true},
-            {text: "Caora", correct: false},
-            {text: "Capall", correct: false},
-            {text: "Tíogar", correct: false}
+            { text: "Gabhar", correct: true },
+            { text: "Caora", correct: false },
+            { text: "Capall", correct: false },
+            { text: "Tíogar", correct: false }
         ]
     },
     {
         question: "chicken",
         answers: [
-            {text: "Sicín", correct: true},
-            {text: "Lacha", correct: false},
-            {text: "Madra", correct: false},
-            {text: "Éan", correct: false}
+            { text: "Sicín", correct: true },
+            { text: "Lacha", correct: false },
+            { text: "Madra", correct: false },
+            { text: "Éan", correct: false }
         ]
     },
     {
         question: "duck",
         answers: [
-            {text: "Lacha", correct: true},
-            {text: "Cearc", correct: false},
-            {text: "Rón", correct: false},
-            {text: "Féileacán", correct: false}
+            { text: "Lacha", correct: true },
+            { text: "Cearc", correct: false },
+            { text: "Rón", correct: false },
+            { text: "Féileacán", correct: false }
         ]
     },
     {
         question: "rabbit",
         answers: [
-            {text: "Coinín", correct: true},
-            {text: "Luch", correct: false},
-            {text: "Caora", correct: false},
-            {text: "Gabhar", correct: false}
+            { text: "Coinín", correct: true },
+            { text: "Luch", correct: false },
+            { text: "Caora", correct: false },
+            { text: "Gabhar", correct: false }
         ]
     },
     {
         question: "fox",
         answers: [
-            {text: "Sionnach", correct: true},
-            {text: "Fia", correct: false},
-            {text: "Madra", correct: false},
-            {text: "Bear", correct: false}
+            { text: "Sionnach", correct: true },
+            { text: "Fia", correct: false },
+            { text: "Madra", correct: false },
+            { text: "Bear", correct: false }
         ]
     },
     {
         question: "bear",
         answers: [
-            {text: "Béar", correct: true},
-            {text: "Leon", correct: false},
-            {text: "Tíogar", correct: false},
-            {text: "Eilifint", correct: false}
+            { text: "Béar", correct: true },
+            { text: "Leon", correct: false },
+            { text: "Tíogar", correct: false },
+            { text: "Eilifint", correct: false }
         ]
     },
     {
         question: "deer",
         answers: [
-            {text: "Fia", correct: true},
-            {text: "Mac Tíre", correct: false},
-            {text: "Féileacán", correct: false},
-            {text: "Rón", correct: false}
+            { text: "Fia", correct: true },
+            { text: "Mac Tíre", correct: false },
+            { text: "Féileacán", correct: false },
+            { text: "Rón", correct: false }
         ]
     },
     {
         question: "wolf",
         answers: [
-            {text: "Mac Tíre", correct: true},
-            {text: "Madra", correct: false},
-            {text: "Leon", correct: false},
-            {text: "Tíogar", correct: false}
+            { text: "Mac Tíre", correct: true },
+            { text: "Madra", correct: false },
+            { text: "Leon", correct: false },
+            { text: "Tíogar", correct: false }
         ]
     },
     {
         question: "mouse",
         answers: [
-            {text: "Luch", correct: true},
-            {text: "Francach", correct: false},
-            {text: "Coinín", correct: false},
-            {text: "Ant", correct: false}
+            { text: "Luch", correct: true },
+            { text: "Francach", correct: false },
+            { text: "Coinín", correct: false },
+            { text: "Ant", correct: false }
         ]
     },
     {
         question: "rat",
         answers: [
-            {text: "Francach", correct: true},
-            {text: "Luch", correct: false},
-            {text: "Iasc", correct: false},
-            {text: "Madra", correct: false}
+            { text: "Francach", correct: true },
+            { text: "Luch", correct: false },
+            { text: "Iasc", correct: false },
+            { text: "Madra", correct: false }
         ]
     },
     {
         question: "snake",
         answers: [
-            {text: "Nathair", correct: true},
-            {text: "Iasc", correct: false},
-            {text: "Loscán", correct: false},
-            {text: "Mac Tíre", correct: false}
+            { text: "Nathair", correct: true },
+            { text: "Iasc", correct: false },
+            { text: "Loscán", correct: false },
+            { text: "Mac Tíre", correct: false }
         ]
     },
     {
         question: "fish",
         answers: [
-            {text: "Iasc", correct: true},
-            {text: "Deilf", correct: false},
-            {text: "Míol Mór", correct: false},
-            {text: "Loscán", correct: false}
+            { text: "Iasc", correct: true },
+            { text: "Deilf", correct: false },
+            { text: "Míol Mór", correct: false },
+            { text: "Loscán", correct: false }
         ]
     },
     {
         question: "bird",
         answers: [
-            {text: "Éan", correct: true},
-            {text: "Bee", correct: false},
-            {text: "Ant", correct: false},
-            {text: "Cat", correct: false}
+            { text: "Éan", correct: true },
+            { text: "Bee", correct: false },
+            { text: "Ant", correct: false },
+            { text: "Cat", correct: false }
         ]
     },
     {
         question: "butterfly",
         answers: [
-            {text: "Féileacán", correct: true},
-            {text: "Seilide", correct: false},
-            {text: "Rón", correct: false},
-            {text: "Leon", correct: false}
+            { text: "Féileacán", correct: true },
+            { text: "Seilide", correct: false },
+            { text: "Rón", correct: false },
+            { text: "Leon", correct: false }
         ]
     },
     {
         question: "bee",
         answers: [
-            {text: "Beach", correct: true},
-            {text: "Cat", correct: false},
-            {text: "Tíogar", correct: false},
-            {text: "Capall", correct: false}
+            { text: "Beach", correct: true },
+            { text: "Cat", correct: false },
+            { text: "Tíogar", correct: false },
+            { text: "Capall", correct: false }
         ]
     },
     {
         question: "ant",
         answers: [
-            {text: "Seangán", correct: true},
-            {text: "Luch", correct: false},
-            {text: "Bó", correct: false},
-            {text: "Iasc", correct: false}
+            { text: "Seangán", correct: true },
+            { text: "Luch", correct: false },
+            { text: "Bó", correct: false },
+            { text: "Iasc", correct: false }
         ]
     },
     {
         question: "dolphin",
         answers: [
-            {text: "Deilf", correct: true},
-            {text: "Míol Mór", correct: false},
-            {text: "Rón", correct: false},
-            {text: "Loscán", correct: false}
+            { text: "Deilf", correct: true },
+            { text: "Míol Mór", correct: false },
+            { text: "Rón", correct: false },
+            { text: "Loscán", correct: false }
         ]
     },
     {
         question: "whale",
         answers: [
-            {text: "Míol Mór", correct: true},
-            {text: "Deilf", correct: false},
-            {text: "Béar", correct: false},
-            {text: "Leon", correct: false}
+            { text: "Míol Mór", correct: true },
+            { text: "Deilf", correct: false },
+            { text: "Béar", correct: false },
+            { text: "Leon", correct: false }
         ]
     }
 
 ];
 
+// Fruit questions //
 const fruitQuestions = [
     {
         question: "apple",
         answers: [
-            {text: "Úll", correct: true},
-            {text: "Banana", correct: false},
-            {text: "Piorra", correct: false},
-            {text: "Oráiste", correct: false}
+            { text: "Úll", correct: true },
+            { text: "Banana", correct: false },
+            { text: "Piorra", correct: false },
+            { text: "Oráiste", correct: false }
         ]
     },
     {
         question: "banana",
         answers: [
-            {text: "Banana", correct: true},
-            {text: "Sútha talún", correct: false},
-            {text: "Fíonchaor", correct: false},
-            {text: "Peitseog", correct: false}
+            { text: "Banana", correct: true },
+            { text: "Sútha talún", correct: false },
+            { text: "Fíonchaor", correct: false },
+            { text: "Peitseog", correct: false }
         ]
     },
     {
         question: "pear",
         answers: [
-            {text: "Piorra", correct: true},
-            {text: "Pluma", correct: false},
-            {text: "Silín", correct: false},
-            {text: "Sú craobh", correct: false}
+            { text: "Piorra", correct: true },
+            { text: "Pluma", correct: false },
+            { text: "Silín", correct: false },
+            { text: "Sú craobh", correct: false }
         ]
     },
     {
         question: "orange",
         answers: [
-            {text: "Oráiste", correct: true},
-            {text: "Sméar dubh", correct: false},
-            {text: "Fraochán gorm", correct: false},
-            {text: "Mealbhacán", correct: false}
+            { text: "Oráiste", correct: true },
+            { text: "Sméar dubh", correct: false },
+            { text: "Fraochán gorm", correct: false },
+            { text: "Mealbhacán", correct: false }
         ]
     },
     {
         question: "strawberry",
         answers: [
-            {text: "Sú talún", correct: true},
-            {text: "Mealbhacán uisce", correct: false},
-            {text: "Anann", correct: false},
-            {text: "Liamóid", correct: false}
+            { text: "Sú talún", correct: true },
+            { text: "Mealbhacán uisce", correct: false },
+            { text: "Anann", correct: false },
+            { text: "Liamóid", correct: false }
         ]
     },
     {
         question: "grape",
         answers: [
-            {text: "Fíonchaor", correct: true},
-            {text: "Líomóid", correct: false},
-            {text: "Cíobhaí", correct: false},
-            {text: "Fíge", correct: false}
+            { text: "Fíonchaor", correct: true },
+            { text: "Líomóid", correct: false },
+            { text: "Cíobhaí", correct: false },
+            { text: "Fíge", correct: false }
         ]
     },
     {
         question: "peach",
         answers: [
-            {text: "Péitseog", correct: true},
-            {text: "Dáta", correct: false},
-            {text: "Pomegránáid", correct: false},
-            {text: "Aibreog", correct: false}
+            { text: "Péitseog", correct: true },
+            { text: "Dáta", correct: false },
+            { text: "Pomegránáid", correct: false },
+            { text: "Aibreog", correct: false }
         ]
     },
     {
         question: "plum",
         answers: [
-            {text: "Pluma", correct: true},
-            {text: "Mangó", correct: false},
-            {text: "Cnó cócó", correct: false},
-            {text: "Abacáid", correct: false}
+            { text: "Pluma", correct: true },
+            { text: "Mangó", correct: false },
+            { text: "Cnó cócó", correct: false },
+            { text: "Abacáid", correct: false }
         ]
     },
     {
         question: "cherry",
         answers: [
-            {text: "Crann silín", correct: true},
-            {text: "Spíonán", correct: false},
-            {text: "Mónóg", correct: false},
-            {text: "Torthaí paisean", correct: false}
+            { text: "Crann silín", correct: true },
+            { text: "Spíonán", correct: false },
+            { text: "Mónóg", correct: false },
+            { text: "Torthaí paisean", correct: false }
         ]
     },
     {
         question: "raspberry",
         answers: [
-            {text: "Sú craobh", correct: true},
-            {text: "Guabha", correct: false},
-            {text: "Caora fin", correct: false},
-            {text: "Pomelo", correct: false}
+            { text: "Sú craobh", correct: true },
+            { text: "Guabha", correct: false },
+            { text: "Caora fin", correct: false },
+            { text: "Pomelo", correct: false }
         ]
     },
     {
         question: "blackberry",
         answers: [
-            {text: "Sméar dubh", correct: true},
-            {text: "Durian", correct: false},
-            {text: "Carambola", correct: false},
-            {text: "Lychee", correct: false}
+            { text: "Sméar dubh", correct: true },
+            { text: "Durian", correct: false },
+            { text: "Carambola", correct: false },
+            { text: "Lychee", correct: false }
         ]
     },
     {
         question: "blueberry",
         answers: [
-            {text: "Sméar dhubh", correct: true},
-            {text: "Sapótaí", correct: false},
-            {text: "Kumquat", correct: false},
-            {text: "Longan", correct: false}
+            { text: "Sméar dhubh", correct: true },
+            { text: "Sapótaí", correct: false },
+            { text: "Kumquat", correct: false },
+            { text: "Longan", correct: false }
         ]
     },
     {
         question: "melon",
         answers: [
-            {text: "Mealbhacán", correct: true},
-            {text: "Cacau", correct: false},
-            {text: "Pitaya", correct: false},
-            {text: "Ackee", correct: false}
+            { text: "Mealbhacán", correct: true },
+            { text: "Cacau", correct: false },
+            { text: "Pitaya", correct: false },
+            { text: "Ackee", correct: false }
         ]
     },
     {
         question: "watermelon",
         answers: [
-            {text: "Mealbhacán uisce", correct: true},
-            {text: "Tamarind", correct: false},
-            {text: "Physalis", correct: false},
-            {text: "Langsat", correct: false}
+            { text: "Mealbhacán uisce", correct: true },
+            { text: "Tamarind", correct: false },
+            { text: "Physalis", correct: false },
+            { text: "Langsat", correct: false }
         ]
     },
     {
         question: "pineapple",
         answers: [
-            {text: "Anann", correct: true},
-            {text: "Salak", correct: false},
-            {text: "Jabuticaba", correct: false},
-            {text: "Santol", correct: false}
+            { text: "Anann", correct: true },
+            { text: "Salak", correct: false },
+            { text: "Jabuticaba", correct: false },
+            { text: "Santol", correct: false }
         ]
     },
     {
         question: "lemon",
         answers: [
-            {text: "Liomóid", correct: true},
-            {text: "Camu camu", correct: false},
-            {text: "Marula", correct: false},
-            {text: "Baobab", correct: false}
+            { text: "Liomóid", correct: true },
+            { text: "Camu camu", correct: false },
+            { text: "Marula", correct: false },
+            { text: "Baobab", correct: false }
         ]
     },
     {
         question: "lime",
         answers: [
-            {text: "Líoma", correct: true},
-            {text: "Chayote", correct: false},
-            {text: "Medlar", correct: false},
-            {text: "Nance", correct: false}
+            { text: "Líoma", correct: true },
+            { text: "Chayote", correct: false },
+            { text: "Medlar", correct: false },
+            { text: "Nance", correct: false }
         ]
     },
     {
         question: "kiwi",
         answers: [
-            {text: "Cíobhaí", correct: true},
-            {text: "Bacuri", correct: false},
-            {text: "Rambutan", correct: false},
-            {text: "Mangosteen", correct: false}
+            { text: "Cíobhaí", correct: true },
+            { text: "Bacuri", correct: false },
+            { text: "Rambutan", correct: false },
+            { text: "Mangosteen", correct: false }
         ]
     },
     {
         question: "fig",
         answers: [
-            {text: "Fige", correct: true},
-            {text: "Sapodilla", correct: false},
-            {text: "Jackfruit", correct: false},
-            {text: "Pulasan", correct: false}
+            { text: "Fige", correct: true },
+            { text: "Sapodilla", correct: false },
+            { text: "Jackfruit", correct: false },
+            { text: "Pulasan", correct: false }
         ]
     },
     {
         question: "date",
         answers: [
-            {text: "Dáta", correct: true},
-            {text: "Breadfruit", correct: false},
-            {text: "Surinam cherry", correct: false},
-            {text: "Jujube", correct: false}
+            { text: "Dáta", correct: true },
+            { text: "Breadfruit", correct: false },
+            { text: "Surinam cherry", correct: false },
+            { text: "Jujube", correct: false }
         ]
     },
     {
         question: "pomegranate",
         answers: [
-            {text: "Pomegránáit", correct: true},
-            {text: "Loquat", correct: false},
-            {text: "Soursop", correct: false},
-            {text: "Star apple", correct: false}
+            { text: "Pomegránáit", correct: true },
+            { text: "Loquat", correct: false },
+            { text: "Soursop", correct: false },
+            { text: "Star apple", correct: false }
         ]
     },
     {
         question: "apricot",
         answers: [
-            {text: "Aibreog", correct: true},
-            {text: "Horned melon", correct: false},
-            {text: "Ugli fruit", correct: false},
-            {text: "Cupuacu", correct: false}
+            { text: "Aibreog", correct: true },
+            { text: "Horned melon", correct: false },
+            { text: "Ugli fruit", correct: false },
+            { text: "Cupuacu", correct: false }
         ]
     }
 ];
 
+
+// Colour questions //
 const colourQuestions = [
     {
         question: "red",
         answers: [
-            {text: "Dearg", correct: true},
-            {text: "Gorm", correct: false},
-            {text: "Buí", correct: false},
-            {text: "Glas", correct: false}
-        ]
-    },
-    {
-        question: "green",
-        answers: [
-            {text: "Glas", correct: true},
-            {text: "Gorm", correct: false},
-            {text: "Buí", correct: false},
-            {text: "Dearg", correct: false}
+            { text: "Dearg", correct: true },
+            { text: "Gorm", correct: false },
+            { text: "Glas", correct: false },
+            { text: "Buí", correct: false }
         ]
     },
     {
         question: "blue",
         answers: [
-            {text: "Gorm", correct: true},
-            {text: "Glas", correct: false},
-            {text: "Buí", correct: false},
-            {text: "Dearg", correct: false}
+            { text: "Gorm", correct: true },
+            { text: "Bán", correct: false },
+            { text: "Dubh", correct: false },
+            { text: "Donn", correct: false }
+        ]
+    },
+    {
+        question: "green",
+        answers: [
+            { text: "Glas", correct: true },
+            { text: "Buí", correct: false },
+            { text: "Corcra", correct: false },
+            { text: "Liath", correct: false }
         ]
     },
     {
         question: "yellow",
         answers: [
-            {text: "Buí", correct: true},
-            {text: "Gorm", correct: false},
-            {text: "Glas", correct: false},
-            {text: "Dearg", correct: false}
+            { text: "Buí", correct: true },
+            { text: "Bán", correct: false },
+            { text: "Dubh", correct: false },
+            { text: "Oráiste", correct: false }
+        ]
+    },
+    {
+        question: "white",
+        answers: [
+            { text: "Bán", correct: true },
+            { text: "Dearg", correct: false },
+            { text: "Donn", correct: false },
+            { text: "Liath", correct: false }
         ]
     },
     {
         question: "black",
         answers: [
-            {text: "Dubh", correct: true},
-            {text: "Gorm", correct: false},
-            {text: "Glas", correct: false},
-            {text: "Buí", correct: false}]}
+            { text: "Dubh", correct: true },
+            { text: "Corcra", correct: false },
+            { text: "Oráiste", correct: false },
+            { text: "Uaine", correct: false }
+        ]
+    },
+    {
+        question: "brown",
+        answers: [
+            { text: "Donn", correct: true },
+            { text: "Dearg", correct: false },
+            { text: "Bán", correct: false },
+            { text: "Buí", correct: false }
+        ]
+    },
+    {
+        question: "purple",
+        answers: [
+            { text: "Corcra", correct: true },
+            { text: "Liath", correct: false },
+            { text: "Uaine", correct: false },
+            { text: "Gorm", correct: false }
+        ]
+    },
+    {
+        question: "grey",
+        answers: [
+            { text: "Liath", correct: true },
+            { text: "Dearg", correct: false },
+            { text: "Donn", correct: false },
+            { text: "Bán", correct: false }
+        ]
+    },
+    {
+        question: "orange",
+        answers: [
+            { text: "Oráiste", correct: true },
+            { text: "Corcra", correct: false },
+            { text: "Dubh", correct: false },
+            { text: "Buí", correct: false }
+        ]
+    },
+    {
+        question: "pink",
+        answers: [
+            { text: "Bándearg", correct: true },
+            { text: "Oráiste", correct: false },
+            { text: "Gorm", correct: false },
+            { text: "Uaine", correct: false }
+        ]
+    },
+    {
+        question: "gold",
+        answers: [
+            { text: "Ór", correct: true },
+            { text: "Dearg", correct: false },
+            { text: "Bán", correct: false },
+            { text: "Donn", correct: false }
+        ]
+    },
+    {
+        question: "silver",
+        answers: [
+            { text: "Airgid", correct: true },
+            { text: "Gorm", correct: false },
+            { text: "Corcra", correct: false },
+            { text: "Glas", correct: false }
+        ]
+    },
+    {
+        question: "beige",
+        answers: [
+            { text: "Béas", correct: true },
+            { text: "Liath", correct: false },
+            { text: "Buí", correct: false },
+            { text: "Oráiste", correct: false }
+        ]
+    },
+    {
+        question: "cream",
+        answers: [
+            { text: "Bánbhuí", correct: true },
+            { text: "Bán", correct: false },
+            { text: "Dubh", correct: false },
+            { text: "Corcra", correct: false }
+        ]
+    },
+    {
+        question: "maroon",
+        answers: [
+            { text: "Marún", correct: true },
+            { text: "Dearg", correct: false },
+            { text: "Donn", correct: false },
+            { text: "Buí", correct: false }
+        ]
+    },
+    {
+        question: "navy",
+        answers: [
+            { text: "Dúghorm", correct: true },
+            { text: "Glas", correct: false },
+            { text: "Liath", correct: false },
+            { text: "Uaine", correct: false }
+        ]
+    },
+    {
+        question: "turquoise",
+        answers: [
+            { text: "Turcaid", correct: true },
+            { text: "Corcra", correct: false },
+            { text: "Bán", correct: false },
+            { text: "Ór", correct: false }
+        ]
+    },
+    {
+        question: "cyan",
+        answers: [
+            { text: "Cian", correct: true },
+            { text: "Gorm", correct: false },
+            { text: "Glas", correct: false },
+            { text: "Buí", correct: false }
+        ]
+    },
+    {
+        question: "indigo",
+        answers: [
+            { text: "Indeagó", correct: true },
+            { text: "Corcra", correct: false },
+            { text: "Gorm", correct: false },
+            { text: "Glas", correct: false }
+        ]
+    },
+    {
+        question: "violet",
+        answers: [
+            { text: "Corcairghorm", correct: true },
+            { text: "Dearg", correct: false },
+            { text: "Liath", correct: false },
+            { text: "Oráiste", correct: false }
+        ]
+    },
+    {
+        question: "olive green",
+        answers: [
+            { text: "Glasbhuí", correct: true },
+            { text: "Uaine", correct: false },
+            { text: "Donn", correct: false },
+            { text: "Buí", correct: false }
+        ]
+    },
+    {
+        question: "peach",
+        answers: [
+            { text: "Péitseoige", correct: true },
+            { text: "Bándearg", correct: false },
+            { text: "Oráiste", correct: false },
+            { text: "Buí", correct: false }
+        ]
+    },
+    {
+        question: "mint",
+        answers: [
+            { text: "Miontas", correct: true },
+            { text: "Glas", correct: false },
+            { text: "Uaine", correct: false },
+            { text: "Turcaidghorm", correct: false }
+        ]
+    },
+    {
+        question: "lavender",
+        answers: [
+            { text: "Labhandair", correct: true },
+            { text: "Corcra", correct: false },
+            { text: "Bándearg", correct: false },
+            { text: "Liath", correct: false }
+        ]
+    }
 ];

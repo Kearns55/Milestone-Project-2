@@ -1,18 +1,24 @@
+/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
 
-
-*, *::before, *::after {
+/* Global box sizing + font */
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     font-family: 'Macondo', static;
 }
 
+/* Color variables */
 :root {
     --background: #AD28EB;
     --wrong: #ee0000;
     --correct: #15E602;
 }
 
+/* Body background + layout */
 body {
+    /* Irish flag gradient behind background image */
     background: linear-gradient(to right, #169B62 33.33%, #FFFFFF 0, #FFFFFF 66.66%, #FF883E 0);
     margin: 0;
     padding: 0;
@@ -21,19 +27,22 @@ body {
     align-items: center;
     height: 100vh;
     width: 100vw;
+
+    /* Background image */
     background-image: url('../images/background-img.jpg');
     background-size: cover;
     background-position: center;
 }
 
-h1, h2 {
+/* Headings */
+h1,
+h2 {
     color: black;
     text-align: center;
 }
 
-
-
-.container{
+/* Quiz container */
+.container {
     width: 700px;
     max-width: 100%;
     background-color: white;
@@ -44,9 +53,7 @@ h1, h2 {
     justify-content: center;
 }
 
-
-/* Button styles */
-
+/* Answer button grid */
 .btn-grid {
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -54,7 +61,11 @@ h1, h2 {
     margin: 20px 0;
 }
 
-.btn, #animal-btn, #fruit-btn, #colour-btn {
+/* General button styles (quiz + category) */
+.btn,
+#animal-btn,
+#fruit-btn,
+#colour-btn {
     --hue: var(--background);
     border: 1px solid hsl(287, 100%, 30%);
     background-color: rebeccapurple;
@@ -64,45 +75,51 @@ h1, h2 {
     outline: none;
 }
 
+/* Button hover */
 .btn:hover {
     border-color: black;
 }
 
-.btn.correct{
+/* Correct answer button */
+.btn.correct {
     background-color: var(--correct);
-     color: black;
+    color: black;
 }
 
-.btn.wrong{
+/* Wrong answer button */
+.btn.wrong {
     background-color: var(--wrong);
     border-color: black;
 }
 
-
-.current-question{
+/* Highlight current question word */
+.current-question {
     font-weight: bold;
     font-size: larger;
-    color:#4e1cd6; 
+    color: #4e1cd6;
 }
 
+/* Next button */
 #next-btn {
     font-size: 1rem;
     font-weight: bold;
     padding: 10px 25px;
-
 }
 
-#restart-btn { 
+/* Restart button */
+#restart-btn {
     font-size: 1rem;
     font-weight: bold;
     padding: 10px 20px;
 }
 
-#score{
+/* Score display */
+#score {
     margin-left: 20px;
     margin-top: 10px;
-
 }
+
+/* Controls wrapper (buttons row) */
 .controls {
     display: flex;
     justify-content: center;
@@ -111,6 +128,11 @@ h1, h2 {
     margin-top: auto;
 }
 
+/* Utility classes */
 .hide {
     display: none;
+}
+
+.disable {
+    pointer-events: none;
 }
