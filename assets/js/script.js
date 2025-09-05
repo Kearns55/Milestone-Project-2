@@ -170,6 +170,15 @@ function endQuiz() {
       origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 }
     });
   }, 250);
+
+  // Display final score with special message for perfect score
+
+  if (score === maxQuestions) {
+    document.getElementById('score-heading').classList.add('hide');
+    document.getElementById('perfect-score').classList.remove('hide');
+  } else {
+    document.getElementById('final-score').innerText = score;
+  }
 }
 
 // Apply correct/wrong styling to element
