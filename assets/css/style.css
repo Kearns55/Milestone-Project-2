@@ -41,6 +41,14 @@ h2 {
     text-align: center;
 }
 
+#congrats {
+    color: rebeccapurple;
+}
+
+#quiz-completed {
+    color: darkslategrey;
+}
+
 /* Quiz container */
 .container {
     width: 700px;
