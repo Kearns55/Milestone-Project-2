@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: var(--background);
+    background: linear-gradient(to right, #169B62 33.33%, #FFFFFF 0, #FFFFFF 66.66%, #FF883E 0);
     margin: 0;
     padding: 0;
     display: flex;
