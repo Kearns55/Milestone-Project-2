@@ -90,15 +90,13 @@ Most of your project's **Features** should already align with the **User Stories
 
 | Target | Expectation | Outcome | Screenshot |
 | --- | --- | --- | --- |
-| As a user | I would like to input two numbers and select an operator (`+`, `-`, `*`, `/`) | so that I can calculate a result. | ![screenshot](documentation/features/feature01.png) |
-| As a user | I would like the application to show me an error message if I enter empty input (`NaN`) | so that I understand what went wrong. | ![screenshot](documentation/features/feature02.png) |
-| As a user | I would like the calculation to happen instantly after I select an operator | so that I get my result quickly without waiting. | ![screenshot](documentation/features/feature03.png) |
-| As a user | I would like the application to have clear and large buttons for each operator | so that I can easily select the correct one on any device. | ![screenshot](documentation/features/feature04.png) |
-| As a user | I would like the application to have high-contrast colors and accessible fonts | so that I can easily read and interact with it. | ![screenshot](documentation/features/feature05.png) |
-| As a user | I would like clear labels and instructions | so that I understand how to use the app without confusion. | ![screenshot](documentation/features/feature06.png) |
-| As a user | I would like the app to show me the correct result if my equation was incorrect | so that I understand how the answer was calculated. | ![screenshot](documentation/features/feature07.png) |
-| As a user | I would like to see how many equations I get correct or incorrect | so I can push myself to improve my math skills. | ![screenshot](documentation/features/feature08.png) |
-| As a user | I would like to see a 404 error page if I get lost | so that it's obvious that I've stumbled upon a page that doesn't exist. | ![screenshot](documentation/features/feature09.png) |
+| As a learner | I want to take a quiz that tests my Irish-to-English vocabulary | so that I can practice speaking Irish everyday | ![screenshot](documentation/features/feature01.png) |
+| As a quiz taker |  I want the questions to be multiple choice |  so that I can easily select an answer without typing. | ![screenshot](documentation/features/feature02.png) |
+| As a learner | I want to see my score at the end of the quiz| so that I can track how well I did | ![screenshot](documentation/features/feature03.png) |
+| As a user | I want to know immediately whether my answer is correct or incorrect | so that I can learn from my mistakes right away | ![screenshot](documentation/features/feature04.png) |
+| As a user | I want the application to have high-contrast colors and accessible fonts | so that I can easily read and interact with it. | ![screenshot](documentation/features/feature05.png) |
+| As a mobile user | I want the website to work well on my phone | so that I can take quizzes on the go. | ![screenshot](documentation/features/feature06.png) |
+| As a user | I would like to see a 404 error page if I get lost | so that it's obvious that I've stumbled upon a page that doesn't exist. | ![screenshot](documentation/features/feature07.png) |
 
 ## Bugs
 
