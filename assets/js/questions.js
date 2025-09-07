@@ -161,8 +161,8 @@ const animalQuestions = [
         question: "bird",
         answers: [
             { text: "Éan", correct: true },
-            { text: "Bee", correct: false },
-            { text: "Ant", correct: false },
+            { text: "Iasc", correct: false },
+            { text: "Luch", correct: false },
             { text: "Cat", correct: false }
         ]
     },
@@ -223,15 +223,6 @@ const fruitQuestions = [
             { text: "Banana", correct: false },
             { text: "Piorra", correct: false },
             { text: "Oráiste", correct: false }
-        ]
-    },
-    {
-        question: "banana",
-        answers: [
-            { text: "Banana", correct: true },
-            { text: "Sútha talún", correct: false },
-            { text: "Fíonchaor", correct: false },
-            { text: "Peitseog", correct: false }
         ]
     },
     {
@@ -312,13 +303,13 @@ const fruitQuestions = [
             { text: "Sméar dubh", correct: true },
             { text: "Durian", correct: false },
             { text: "Carambola", correct: false },
-            { text: "Lychee", correct: false }
+            { text: "Ríse", correct: false }
         ]
     },
     {
         question: "blueberry",
         answers: [
-            { text: "Sméar dhubh", correct: true },
+            { text: "Fraochán gorm", correct: true },
             { text: "Sapótaí", correct: false },
             { text: "Kumquat", correct: false },
             { text: "Longan", correct: false }
@@ -330,7 +321,7 @@ const fruitQuestions = [
             { text: "Mealbhacán", correct: true },
             { text: "Cacau", correct: false },
             { text: "Pitaya", correct: false },
-            { text: "Ackee", correct: false }
+            { text: "Sú talún", correct: false }
         ]
     },
     {
@@ -347,71 +338,71 @@ const fruitQuestions = [
         answers: [
             { text: "Anann", correct: true },
             { text: "Salak", correct: false },
-            { text: "Jabuticaba", correct: false },
-            { text: "Santol", correct: false }
+            { text: "Úll", correct: false },
+            { text: "Tráta", correct: false }
         ]
     },
     {
         question: "lemon",
         answers: [
             { text: "Liomóid", correct: true },
-            { text: "Camu camu", correct: false },
-            { text: "Marula", correct: false },
-            { text: "Baobab", correct: false }
+            { text: "Sú talún", correct: false },
+            { text: "Fige", correct: false },
+            { text: "Silíní", correct: false }
         ]
     },
     {
         question: "lime",
         answers: [
             { text: "Líoma", correct: true },
-            { text: "Chayote", correct: false },
-            { text: "Medlar", correct: false },
-            { text: "Nance", correct: false }
+            { text: "Fíonchaor", correct: false },
+            { text: "Péitseog", correct: false },
+            { text: "Oráiste", correct: false }
         ]
     },
     {
         question: "kiwi",
         answers: [
             { text: "Cíobhaí", correct: true },
-            { text: "Bacuri", correct: false },
-            { text: "Rambutan", correct: false },
-            { text: "Mangosteen", correct: false }
+            { text: "Sú craobh", correct: false },
+            { text: "Pomagrán", correct: false },
+            { text: "Ológa", correct: false }
         ]
     },
     {
         question: "fig",
         answers: [
             { text: "Fige", correct: true },
-            { text: "Sapodilla", correct: false },
-            { text: "Jackfruit", correct: false },
-            { text: "Pulasan", correct: false }
+            { text: "Cuirín dearg", correct: false },
+            { text: "Caora fraoigh", correct: false },
+            { text: "Pomagrán", correct: false }
         ]
     },
     {
         question: "date",
         answers: [
             { text: "Dáta", correct: true },
-            { text: "Breadfruit", correct: false },
-            { text: "Surinam cherry", correct: false },
-            { text: "Jujube", correct: false }
+            { text: "Cuirín dearg", correct: false },
+            { text: "Úll", correct: false },
+            { text: "Silíní", correct: false }
         ]
     },
     {
         question: "pomegranate",
         answers: [
-            { text: "Pomegránáit", correct: true },
-            { text: "Loquat", correct: false },
-            { text: "Soursop", correct: false },
-            { text: "Star apple", correct: false }
+            { text: "Pomagrán", correct: true },
+            { text: "Cuirín dearg", correct: false },
+            { text: "Piorra", correct: false },
+            { text: "Ológa", correct: false }
         ]
     },
     {
         question: "apricot",
         answers: [
             { text: "Aibreog", correct: true },
-            { text: "Horned melon", correct: false },
-            { text: "Ugli fruit", correct: false },
-            { text: "Cupuacu", correct: false }
+            { text: "Oráiste", correct: false },
+            { text: "Líomóid", correct: false },
+            { text: "Anann", correct: false }
         ]
     }
 ];
@@ -470,7 +461,7 @@ const colourQuestions = [
             { text: "Dubh", correct: true },
             { text: "Corcra", correct: false },
             { text: "Oráiste", correct: false },
-            { text: "Uaine", correct: false }
+            { text: "Glas", correct: false }
         ]
     },
     {
@@ -487,7 +478,7 @@ const colourQuestions = [
         answers: [
             { text: "Corcra", correct: true },
             { text: "Liath", correct: false },
-            { text: "Uaine", correct: false },
+            { text: "Glas", correct: false },
             { text: "Gorm", correct: false }
         ]
     },
@@ -515,7 +506,7 @@ const colourQuestions = [
             { text: "Bándearg", correct: true },
             { text: "Oráiste", correct: false },
             { text: "Gorm", correct: false },
-            { text: "Uaine", correct: false }
+            { text: "Glas", correct: false }
         ]
     },
     {
@@ -569,7 +560,7 @@ const colourQuestions = [
             { text: "Dúghorm", correct: true },
             { text: "Glas", correct: false },
             { text: "Liath", correct: false },
-            { text: "Uaine", correct: false }
+            { text: "Glas", correct: false }
         ]
     },
     {
@@ -612,7 +603,7 @@ const colourQuestions = [
         question: "olive green",
         answers: [
             { text: "Glasbhuí", correct: true },
-            { text: "Uaine", correct: false },
+            { text: "Glas", correct: false },
             { text: "Donn", correct: false },
             { text: "Buí", correct: false }
         ]
@@ -631,7 +622,7 @@ const colourQuestions = [
         answers: [
             { text: "Miontas", correct: true },
             { text: "Glas", correct: false },
-            { text: "Uaine", correct: false },
+            { text: "Glas", correct: false },
             { text: "Turcaidghorm", correct: false }
         ]
     },

@@ -31,7 +31,6 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 | assets | [questions.js](https://github.com/Kearns55/Milestone-Project-2/blob/main/assets/js/questions.js) |  | ![screenshot](documentation/validation/javascript%20validation.PNG) |
 | assets | [script.js](https://github.com/Kearns55/Milestone-Project-2/blob/main/assets/js/script.js) |  | ![screenshot](documentation/validation/javascript%20validation.PNG) |
 
-
 ## Responsiveness
 
 I've tested my deployed project to check for responsiveness issues.
@@ -153,4 +152,5 @@ Any remaining open issues can be tracked [here](https://www.github.com/Kearns55/
 
 > [!IMPORTANT]  
 > There are no remaining bugs that I am aware of, though, even after thorough testing, I cannot rule out the possibility.
+
 
