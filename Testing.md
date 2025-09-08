@@ -9,8 +9,8 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Directory | File | URL | Screenshot | 
 | --- | --- | --- | --- | 
-|  | [404.html](https://github.com/Kearns55/Milestone-Project-2/blob/main/404.html) | [HTML Validator](https://validator.w3.org/nu/?doc=https://kearns55.github.io/Milestone-Project-2/404.html) | ![screenshot](documentation/validation/404%20validation.PNG) |
-|  | [index.html](https://github.com/Kearns55/Milestone-Project-2/blob/main/index.html) | [HTML Validator](https://validator.w3.org/nu/?doc=https://kearns55.github.io/Milestone-Project-2/index.html) | ![screenshot](documentation/validation/index.html%20%20validation.PNG) |
+|  | [404.html](https://github.com/Kearns55/Milestone-Project-2/blob/main/404.html) | [HTML Validator](https://validator.w3.org/nu/?doc=https://kearns55.github.io/Milestone-Project-2/404.html) | ![screenshot](documentation/validation/404%20validation.png) |
+|  | [index.html](https://github.com/Kearns55/Milestone-Project-2/blob/main/index.html) | [HTML Validator](https://validator.w3.org/nu/?doc=https://kearns55.github.io/Milestone-Project-2/index.html) | ![screenshot](documentation/validation/index.html%20%20validation.png) |
 
 
 ### CSS
@@ -19,7 +19,7 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | Directory | File | URL | Screenshot | 
 | --- | --- | --- | --- |
-| assets | [style.css](https://github.com/Kearns55/Milestone-Project-2/blob/main/assets/css/style.css) | [CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https://kearns55.github.io/Milestone-Project-2) | ![screenshot](documentation/validation/css%20validation.PNG) |
+| assets | [style.css](https://github.com/Kearns55/Milestone-Project-2/blob/main/assets/css/style.css) | [CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https://kearns55.github.io/Milestone-Project-2) | ![screenshot](documentation/validation/css%20validation.png) |
 
 
 ### JavaScript
@@ -28,8 +28,8 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 | Directory | File | URL | Screenshot | 
 | --- | --- | --- | --- | 
-| assets | [questions.js](https://github.com/Kearns55/Milestone-Project-2/blob/main/assets/js/questions.js) |  | ![screenshot](documentation/validation/questions-validation.PNG) |
-| assets | [script.js](https://github.com/Kearns55/Milestone-Project-2/blob/main/assets/js/script.js) |  | ![screenshot](documentation/validation/script-validation.PNG) |
+| assets | [questions.js](https://github.com/Kearns55/Milestone-Project-2/blob/main/assets/js/questions.js) |  | ![screenshot](documentation/validation/questions-validation.png) |
+| assets | [script.js](https://github.com/Kearns55/Milestone-Project-2/blob/main/assets/js/script.js) |  | ![screenshot](documentation/validation/script-validation.png) |
 
 ## Responsiveness
 
@@ -37,8 +37,8 @@ I've tested my deployed project to check for responsiveness issues.
 
 | Page | Mobile | Tablet | Desktop | 
 | --- | --- | --- | --- | 
-| Home | ![screenshot](documentation/responsiveness/home-brave.png) | ![screenshot](documentation/responsiveness/home-safari.png) | ![screenshot](documentation/responsiveness/home-chrome.PNG) | Works as expected |
-| Game | ![screenshot](documentation/responsiveness/quiz-brave.png) | ![screenshot](documentation/responsiveness/quiz-safari.png) | ![screenshot](documentation/responsiveness/quiz-chrome.PNG) | Works as expected |
+| Home | ![screenshot](documentation/responsiveness/home-brave.png) | ![screenshot](documentation/responsiveness/home-safari.png) | ![screenshot](documentation/responsiveness/home-chrome.png) | Works as expected |
+| Game | ![screenshot](documentation/responsiveness/quiz-brave.png) | ![screenshot](documentation/responsiveness/quiz-safari.png) | ![screenshot](documentation/responsiveness/quiz-chrome.png) | Works as expected |
 | 404 | ![screenshot](documentation/responsiveness/404-brave.png) | ![screenshot](documentation/responsiveness/404-safari.png) | ![screenshot](documentation/responsiveness/404-chrome.png) | Works as expected |
 
 ## Browser Compatibility
@@ -51,9 +51,9 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 | Page | Chrome | Brave | Safari | 
 | --- | --- | --- | --- | 
-| Home | ![screenshot](documentation/responsiveness/home-chrome.PNG) | ![screenshot](documentation/responsiveness/home-brave.png) | ![screenshot](documentation/responsiveness/home-safari.png) | Works as expected |
-| Game | ![screenshot](documentation/responsiveness/quiz-chrome.PNG) | ![screenshot](documentation/responsiveness/quiz-brave.png) | ![screenshot](documentation/responsiveness/quiz-safari.png) | Works as expected |
-| 404 | ![screenshot](documentation/responsiveness/404-chrome.PNG) | ![screenshot](documentation/responsiveness/404-brave.png) | ![screenshot](documentation/responsiveness/404-safari.png) | Works as expected |
+| Home | ![screenshot](documentation/responsiveness/home-chrome.png) | ![screenshot](documentation/responsiveness/home-brave.png) | ![screenshot](documentation/responsiveness/home-safari.png) | Works as expected |
+| Game | ![screenshot](documentation/responsiveness/quiz-chrome.png) | ![screenshot](documentation/responsiveness/quiz-brave.png) | ![screenshot](documentation/responsiveness/quiz-safari.png) | Works as expected |
+| 404 | ![screenshot](documentation/responsiveness/404-chrome.png) | ![screenshot](documentation/responsiveness/404-brave.png) | ![screenshot](documentation/responsiveness/404-safari.png) | Works as expected |
 
 ## Lighthouse Audit
 
