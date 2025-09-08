@@ -28,8 +28,8 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 | Directory | File | URL | Screenshot | 
 | --- | --- | --- | --- | 
-| assets | [questions.js](https://github.com/Kearns55/Milestone-Project-2/blob/main/assets/js/questions.js) |  | ![screenshot](documentation/validation/javascript%20validation.PNG) |
-| assets | [script.js](https://github.com/Kearns55/Milestone-Project-2/blob/main/assets/js/script.js) |  | ![screenshot](documentation/validation/javascript%20validation.PNG) |
+| assets | [questions.js](https://github.com/Kearns55/Milestone-Project-2/blob/main/assets/js/questions.js) |  | ![screenshot](documentation/validation/questions-validation.PNG) |
+| assets | [script.js](https://github.com/Kearns55/Milestone-Project-2/blob/main/assets/js/script.js) |  | ![screenshot](documentation/validation/script-validation.PNG) |
 
 ## Responsiveness
 
