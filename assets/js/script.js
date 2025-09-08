@@ -12,6 +12,7 @@ const answerButtonsElement = document.getElementById('answer-buttons');
 const categoryButtons = document.querySelectorAll('.category-btn');
 const scoreElement = document.getElementById('score');
 const endQuizElement = document.getElementById('end-quiz');
+let colors = ["#169B62", "#FFFFFF", "#FF883E"];
 
 let questions, shuffledQuestions, currentQuestionIndex;
 let score = 0;
@@ -162,7 +163,8 @@ function endQuiz() {
     confetti({
       ...defaults,
       particleCount,
-      origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 }
+      origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
+      colors: colors
     });
     confetti({
       ...defaults,
